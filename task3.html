@@ -13,60 +13,60 @@
     Список тегів які можуть стати в нагоді: <html>, <head>, <meta>, <title>, <body>, 
     <header>, <h1>, <main>, <section>, <h2>, <figure>, <img>, <figcaption>, <footer>, <p>, <aside> -->
 
-    <header>
+    <header role="banner">
         <img src="/assets/logo.png" alt="Logo" width="100px">
-        <nav>
+        <nav role="navigation" aria-label="Main menu">
             <ul>
-                <li><a href="#">Main page</a></li>
-                <li><a href="#">Appetizers</a></li>
-                <li><a href="#">Main dishes</a></li>
-                <li><a href="#">Desserts</a></li>
+                <li role="menuitem"><a href="#" tabindex="0">Main page</a></li>
+                <li role="menuitem"><a href="#" tabindex="0"></a>>Appetizers</a></li>
+                <li role="menuitem"><a href="#" tabindex="0"></a>>Main dishes</a></li>
+                <li role="menuitem"><a href="#" tabindex="0"></a>>Desserts</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main role="main">
         <nav>
             <ul>
-                <li><a href="#">Main page</a></li>
-                <li><a href="#">Appetizers</a></li>
+                <li role="menuitem"><a href="#">Main page</a></li>
+                <li role="menuitem"><a href="#">Appetizers</a></li>
             </ul>
         </nav>
         <h1>Appetizers</h1>
-        <article>
+        <article role="article">
             <h2>Appetizer</h2>
             <p>it is a food or drink that stimulates the appetite and is usually served before a meal.</p>
         </article>
 
         <section>
             <figure>
-                <img src="/assets/appetizer.jpg" alt="Avocado toast" width="300px">
+                <img src="/assets/appetizer.jpg" alt="Avocado toast" width="300px" tabindex="0">
                 <figcaption>Photographer: John Dou; Food stylist: Jane Doe</figcaption>
                 <h3><a href="#">Avocado toast</a></h3>
                 <p>Price: $5</p>
-                <ul>
-                    <li>1 slice sourdough bread </li>
-                    <li>1 avocado</li>
-                    <li>0.5 teaspoon lemon juice</li>
+                <ul role="list">
+                    <li role="listitem">1 slice sourdough bread </li>
+                    <li role="listitem">1 avocado</li>
+                    <li role="listitem">0.5 teaspoon lemon juice</li>
                 </ul>
             </figure>
 
             <figure>
-                <img src="/assets/appetizer2.jpg" alt="Spicy Roasted Shrimp" width="300px">
+                <img src="/assets/appetizer2.jpg" alt="Spicy Roasted Shrimp" width="300px" tabindex="0">
                 <figcaption>Photographer: Jane Doe; Food stylist: Jane Doe</figcaption>
                 <h3><a href="#">Spicy Roasted Shrimp</a></h3>
                 <p>Price: $7</p>
-                <ul>
-                    <li>15 raw shrimps</li>
-                    <li>2 pieces of garlic</li>
-                    <li>100g butter</li>
-                    <li>100g sour cream</li>
+                <ul role="list">
+                    <li role="listitem">15 raw shrimps</li>
+                    <li role="listitem">2 pieces of garlic</li>
+                    <li role="listitem">100g butter</li>
+                    <li role="listitem">100g sour cream</li>
                 </ul>
             </figure>
         </section>
     </main>
 
-    <aside>
+    <aside role="figure">
         <h1>Popular items today</h1>
         <figure>
             <img src="assets/main_dish.jpg" alt="Parmesan Crusted Chicken" width="200px">
@@ -76,7 +76,7 @@
         </figure>
     </aside>
 
-    <footer>
+    <footer role="contentinfo">
         <p>&copy; 2024 by TetiRest. All rights reserved.</p>
         <nav>
             <ul>
