@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TetiRest - Online restaurant</title>
+    <link href="assets/logo.png" rel="icon">
+</head>
+
+<body>
+    <!-- ЗАВДАННЯ 3 Створіть layout для каталогу товарів
+
+    Список тегів які можуть стати в нагоді: <html>, <head>, <meta>, <title>, <body>, 
+    <header>, <h1>, <main>, <section>, <h2>, <figure>, <img>, <figcaption>, <footer>, <p>, <aside> -->
+
+    <header role="banner">
+        <img src="/assets/logo.png" alt="Logo" width="100px">
+        <nav role="navigation" aria-label="Main menu">
+            <ul>
+                <li role="menuitem"><a href="#" tabindex="0">Main page</a></li>
+                <li role="menuitem"><a href="#" tabindex="0">Appetizers</a></li>
+                <li role="menuitem"><a href="#" tabindex="0">Main dishes</a></li>
+                <li role="menuitem"><a href="#" tabindex="0">Desserts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <nav>
+            <ul>
+                <li role="menuitem"><a href="#">Main page</a></li>
+                <li role="menuitem"><a href="#">Appetizers</a></li>
+            </ul>
+        </nav>
+        <h1 aria-label="Page name">Appetizers</h1>
+        <article role="article">
+            <h2 aria-label="Category name">Appetizer</h2>
+            <p aria-label="Category description">it is a food or drink that stimulates the appetite and is usually served before a meal.</p>
+        </article>
+
+        <section>
+            <figure>
+                <img src="/assets/appetizer.jpg" alt="Avocado toast" width="300px" tabindex="0">
+                <figcaption>
+                    <a href="#" aria-label="Product name">Avocado toast</a>
+                    <span aria-label="Product price">Price: $5</span>
+                    <ul role="list">
+                        <li role="listitem">1 slice sourdough bread </li>
+                        <li role="listitem">1 avocado</li>
+                        <li role="listitem">0.5 teaspoon lemon juice</li>
+                    </ul>
+              </figcaption>
+            </figure>
+
+            <figure>
+                <img src="/assets/appetizer2.jpg" alt="Spicy Roasted Shrimp" width="300px" tabindex="0">
+                <figcaption>
+                    <a href="#" aria-label="Product name">Spicy Roasted Shrimp</a>
+                    <span aria-label="Product price">Price: $7</span>
+                    <ul role="list">
+                        <li role="listitem">15 raw shrimps</li>
+                        <li role="listitem">2 pieces of garlic</li>
+                        <li role="listitem">100g butter</li>
+                        <li role="listitem">100g sour cream</li>
+                    </ul>
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <aside role="figure">
+        <h1 aria-label="Topic name">Popular items today</h1>
+        <figure>
+            <img src="assets/main_dish.jpg" alt="Parmesan Crusted Chicken" width="200px">
+            <figcaption>
+                <a href="#" aria-label="Product name">Parmesan Crusted Chicken</a>
+                <span aria-label="Product price">Price: $10</span>
+            </figcaption>
+        </figure>
+    </aside>
+
+    <footer role="contentinfo">
+        <span aria-label="copyright">&copy; 2024 by TetiRest. All rights reserved.</span>
+        <nav role="navigation">
+            <ul>
+                <li role="menuitem"><a href="#">Privacy Policy</a></li>
+                <li role="menuitem"><a href="#">Terms of use</a></li>
+                <li role="menuitem"><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
